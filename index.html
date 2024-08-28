@@ -24,11 +24,11 @@
                     <i class="fa-brands fa-instagram fa-xl"></i>
                     <h5 class="d-inline-block fs-5">Instagram</h5>
                 </div>
+
                 <div class="d-flex align-right justify-content-end">
                     <!-- Button Modal Trigger -->
-                    <button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Create a New Post
-                    </button>
+                    <button type="button" class="btn btn-success me-2" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Create a New Post</button>
                     <!--Dropdown Button-->
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
@@ -77,8 +77,12 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </nav>
-    <!-- nav cierra aquí pues de lo contrario las tabs quedan dentro del modal!!-->
+    <!-- validado-->
 
     <!--Dropdown structure-->
     <div class="dropdown">
@@ -96,43 +100,107 @@
     <div class="container-fluid p-2">
         <ul class="nav nav-pill justify-content-center" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
-                <a class="nav-link active" id="grid-tab" data-bs-toggle="tab" data-bs-target="#grid" type="button"
-                    role="tab" aria-controls="home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></a>
+                <a class="nav-link active" id="grid-tab" data-bs-toggle="tab" data-bs-target="#grid" type="icon"
+                    role="tab" aria-controls="grid" aria-selected="true"> <i class="fa-solid fa-table-cells"></i> </a>
             </li>
             <li class="nav-item" role="presentation">
-                <a class="nav-link" id="sqare-tab" data-bs-toggle="tab" data-bs-target="#sqare" type="button"><i
-                        class="fa-regular fa-square"></i></a>
+                <a class="nav-link" id="square-tab" data-bs-toggle="tab" data-bs-target="#square" type="icon"><i
+                        class="fa-solid fa-square"></i></a>
             </li>
         </ul>
         <!--Tab content 3 rows -->
-        <div class="container-fluid overflow-hidden">
-            <div class="row gy-1">
-                <div class="col-4">
-                    <div class="p-1"><img src="https://picsum.photos/600/300?random=1"class="img-fluid" alt="..."></div>
-                    <div class="p-1"><img src="https://picsum.photos/600/300?random=2"class="img-fluid" alt="..."></div>
-                    <div class="p-1"><img src="https://picsum.photos/600/300?random=3"class="img-fluid" alt="..."></div>
-                </div>
-                <div class="col-4">
-                    <div class="p-1"><img src="https://picsum.photos/600/300?random=4"class="img-fluid" alt="..."></div>
-                    <div class="p-1"><img src="https://picsum.photos/600/300?random=5"class="img-fluid" alt="..."></div>
-                    <div class="p-1"><img src="https://picsum.photos/600/300?random=6"class="img-fluid" alt="..."></div>
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="grid" role="tabpanel" aria-labelledby="grid-tab">
+                <div class="container-fluid">
+                    <div class="row row-cols-3">
+                        <div class="col-4">
+                            <div class="p-1"><img src="https://picsum.photos/600/600?random=1" class="img-fluid"
+                                    alt="...">
+                            </div>
+                            <div class="p-1"><img src="https://picsum.photos/600/600?random=2" class="img-fluid"
+                                    alt="...">
+                            </div>
+                            <div class="p-1"><img src="https://picsum.photos/600/600?random=3" class="img-fluid"
+                                    alt="...">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="p-1"><img src="https://picsum.photos/600/600?random=4" class="img-fluid"
+                                    alt="...">
+                            </div>
+                            <div class="p-1"><img src="https://picsum.photos/600/600?random=5" class="img-fluid"
+                                    alt="...">
+                            </div>
+                            <div class="p-1"><img src="https://picsum.photos/600/600?random=6" class="img-fluid"
+                                    alt="...">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="p-1"><img src="https://picsum.photos/600/600?random=7" class="img-fluid"
+                                    alt="...">
+                            </div>
+                            <div class="p-1"><img src="https://picsum.photos/600/600?random=8" class="img-fluid"
+                                    alt="...">
+                            </div>
+                            <div class="p-1"><img src="https://picsum.photos/600/600?random=9" class="img-fluid"
+                                    alt="...">
+                            </div>
+                        </div>
                     </div>
-                <div class="col-4">
-                    <div class="p-1"><img src="https://picsum.photos/600/300?random=7"class="img-fluid" alt="..."></div>
-                    <div class="p-1"><img src="https://picsum.photos/600/300?random=8"class="img-fluid" alt="..."></div>
-                    <div class="p-1"><img src="https://picsum.photos/600/300?random=9"class="img-fluid" alt="..."></div>
-            </div>
-        </div>
+                </div>
+                <!--Tab Content 1 row-->
 
 
-    </div>
-    </div>
+                <div class="container">
+                    <div class="card mx-auto" style="width: 40rem;">
+                        <div class="card-header d-flex align-items-center">
+                            <h5 class="card-title">Something amazing</h5>
+                            <small class="ms-auto">26/8</small>
+                        </div>
 
-    </div>
-    </div>
-    </div>
+                        <img src="https://picsum.photos/600/300?random=10" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <p><strong>204 Likes</strong></p>
+                        </div>
+                        <p class="card-text">This is an example of a very good photo that you can poston
+                            instagram</p>
+                    </div>
+
+                </div>
+                <div class="container">
+                    <div class="card mx-auto" style="width: 40rem;">
+                        <div class="card-header d-flex align-items-center">
+                            <h5 class="card-title">Awesome expiriences!</h5>
+                            <small class="ms-auto">18/8</small>
+                        </div>
+                        <img src="https://picsum.photos/600/300?random=11" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p><strong>5024 Likes</strong></p>
+                            <p class="card-text">This is an example of a very good photo that you can post on
+                                instagram
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
 
+                <div class="container">
+                    <div class="card mx-auto" style="width: 40rem;">
+                        <div class="card-header d-flex align-items-center">
+                            <h5 class="card-title">Just living</h5>
+                            <small class="ms-auto">7/8</small>
+                        </div>
+                        <img src="https://picsum.photos/600/300?random=12" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p><strong>26894 Likes</strong></p>
+                            <p class="card-text">This is an example of a very good photo that you can post on
+                                instagram
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
 </body>
 
 </html>
