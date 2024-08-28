@@ -25,12 +25,11 @@
                     <h5 class="d-inline-block fs-5">Instagram</h5>
                 </div>
                 <div class="d-flex align-right justify-content-end">
-
-
-                    <!-- Button modal -->
+                    <!-- Button Modal Trigger -->
                     <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         Create a New Post
                     </button>
+                    <!--Dropdown Button-->
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
                             data-bs-toggle="dropdown" aria-expanded="false">
@@ -46,8 +45,7 @@
                             <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
                         </ul>
                     </div>
-
-                    <!-- Modal -->
+                    <!-- Modal Structure -->
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
                         <div class="modal-dialog">
@@ -57,6 +55,8 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
+
+                                <!--Modal Body-->
                                 <div class="modal-body">
                                     <h2>Caption</h2>
                                     <textarea class="form-control" placeholder="Add the caption of your post here"
@@ -72,31 +72,68 @@
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary"
                                             data-bs-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Publish</button>
+                                        <button type="button" class="btn btn-success">Publish</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa-solid fa-gear"></i>
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="#">Profile</a></li>
-                                <li><a class="dropdown-item" href="#">Accesibility</a></li>
-                                <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
-                            </ul>
-                        </div>
-                        
-                    </div>
+    </nav>
+    <!-- nav cierra aquí pues de lo contrario las tabs quedan dentro del modal!!-->
+
+    <!--Dropdown structure-->
+    <div class="dropdown">
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+            <li>
+                <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+        </ul>
+    </div>
+    <!--Tabs JS Behavior-->
+    <div class="container-fluid p-2">
+        <ul class="nav nav-pill justify-content-center" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="grid-tab" data-bs-toggle="tab" data-bs-target="#grid" type="button"
+                    role="tab" aria-controls="home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="sqare-tab" data-bs-toggle="tab" data-bs-target="#sqare" type="button"><i
+                        class="fa-regular fa-square"></i></a>
+            </li>
+        </ul>
+        <!--Tab content 3 rows -->
+        <div class="container text-center">
+            <div class="row row-">
+                <div class="col-4">
+                    <div class="p-1"><img src="https://picsum.photos/id/13/400"></div>
+                    <div class="p-1"><img src=https://picsum.photos/id/25/400></div>
+                    <div class="p-1"><img src=https://picsum.photos/id/43/400></div>
+                </div>
+                <div class="col-4">
+                    <div class="p-1"><img src=https://picsum.photos/id/48/400></div>
+                    <div class="p-1"><img src=https://picsum.photos/id/200/400></div>
+                    <div class="p-1"><img src=https://picsum.photos/id/98/400></div>
+                </div>
+                <div class="col-4">
+                    <div class="p-1"><img src=https://picsum.photos/id/65/400></div>
+                    <div class="p-1"><img src=https://picsum.photos/id/33/400></div>
+                    <div class="p-1"><img src=https://picsum.photos/id/78/400></div>
                 </div>
             </div>
-    </nav>
+        </div>
+
+
+    </div>
+    </div>
+
+    </div>
+    </div>
+    </div>
+
+
 </body>
 
 </html>
